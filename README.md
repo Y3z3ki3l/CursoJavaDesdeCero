@@ -1,2 +1,2 @@
-# CursoJavaDesdeCero
-Curso Java Desde Cero de Pildoras Informaticas
+# CursoJavaDesdeCero_PrimerosPasos
+Curso Java Desde Cero, Primeros pasos de Pildoras Informaticas
