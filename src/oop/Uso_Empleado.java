@@ -31,21 +31,22 @@ public class Uso_Empleado {
 		misEmpleados[0] = new Empleado("Franz Muñoz", 10000.00, 2019, 10, 9);
 		misEmpleados[1] = new Empleado("Coco Ramos", 11000.00, 2019, 03, 21);
 		misEmpleados[2] = new Empleado("Niko Muñoz", 12000.00, 2017, 10, 27);
-//		misEmpleados[3] = new Empleado("Alonso Mu�oz");
+		// misEmpleados[3] = new Empleado("Alonso Mu�oz");
 		misEmpleados[3] = jefe_RRHH;	//Polimorfismo en accion. Principio de sustituci�n
 		
 		misEmpleados[4] = new Jefatura("Ana María", 25000.00, 2014, 03, 01);
 		Jefatura jefa_Finanzas = (Jefatura) misEmpleados[4];
-		jefa_Finanzas.estableceIncentivo(5000);
+		jefa_Finanzas.estableceIncentivo(55000);
+
 		
-//		Usando instanceof
-		/*
+		// Usando instanceof
+		/* 
 		Empleado director_comercial = new Jefatura("Sandra", 85000.00, 2012, 05, 05);
 		Comparable is_comparable = new Empleado("Elizabeth", 95000.00, 2011, 06, 07);
 		
 		if (director_comercial instanceof Empleado) {
 			
-			System.out.println("Es de tipo jefatura");
+			System.out.println(director_comercial.getNombre() + " es una instancia de tipo Jefatura");
 			
 		}
 		
@@ -54,7 +55,7 @@ public class Uso_Empleado {
 			System.out.println("Implementa la interface Comparable");
 			
 		}
-		*/
+		 */
 		
 		System.out.println(jefa_Finanzas.tomar_decisiones("Dar mas días de vacaciones"
 				+ " a los empleados"));
@@ -65,14 +66,14 @@ public class Uso_Empleado {
 			+ misEmpleados[2].establece_bonus(200));
 		
 		for (Empleado empleado : misEmpleados) {
+		/* 	
+			System.out.println("Informaci�n del empleado"
+					+ "\nNombre:				" + empleado.getNombre()
+					+ "\nSueldo:				" + String.format("%.2f", empleado.getSueldo())
+					+ "\nFecha de ingreso:		" + empleado.getAltaContrato());
 			
-//			System.out.println("Informaci�n del empleado"
-//					+ "\nNombre:				" + empleado.getNombre()
-//					+ "\nSueldo:				" + String.format("%.2f", empleado.getSueldo())
-//					+ "\nFecha de ingreso:		" + empleado.getAltaContrato());
-			
-//			System.out.println("Aumentar sueldo...");
-			
+			System.out.println("Aumentar sueldo...");
+			 */
 			empleado.aumentaSueldo(15.0);
 			
 		}
@@ -123,10 +124,9 @@ class Jefatura extends Empleado implements Jefes{
 
 	public double establece_bonus(double bonus){
 
-		double prima = 2000;
+		double prima = 500;
 
 		return Trabajadores.bonus_base + bonus + prima;
-
 	}
 	
 }

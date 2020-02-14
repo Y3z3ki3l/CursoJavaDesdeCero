@@ -22,10 +22,10 @@ public class AdivinaNumero {
 //			numero = input.nextInt();
 //			
 //			if (randNum < numero) {
-//				System.out.println("Introduce un numero más bajo");
+//				System.out.println("Introduce un numero mï¿½s bajo");
 //			}
 //			else if (randNum > numero) {
-//				System.out.println("Introduce un numero más alto");
+//				System.out.println("Introduce un numero mï¿½s alto");
 //			}
 //			
 //		}
@@ -40,15 +40,17 @@ public class AdivinaNumero {
 			numero = input.nextInt();
 			
 			if (randNum < numero) {
-				System.out.println("Introduce un numero más bajo");
+				System.out.println("Introduce un numero mï¿½s bajo");
 			}
 			else if (randNum > numero) {
-				System.out.println("Introduce un numero más alto");
+				System.out.println("Introduce un numero mï¿½s alto");
 			}
 			
 		} while (numero != randNum);
 		
 		System.out.println("Felicidades! Lo lograste en " + intentos + " intentos");
+
+		input.close();
 		
 	}
 

@@ -9,7 +9,7 @@ import java.awt.Toolkit;
 /**
  * PruebaTempzrInner
  */
-public class PruebaTempzrInner {
+public class PruebaTemporizadorInner {
 
     public static void main(String[] args) {
         
@@ -27,11 +27,11 @@ public class PruebaTempzrInner {
 
 
 /**
- * InnerPruebaTempzrInner
+ * InnerPruebaTemporizadorInner
  */
 class Reloj {
 
-    public void enMarcha(int intervalo, final boolean sonido){
+    public void enMarcha(int intervalo, boolean sonido){
 
         class DameLaHora2 implements ActionListener {
 
@@ -39,7 +39,7 @@ class Reloj {
     
                 Date ahora = new Date();
     
-                System.out.println("Hora cada 3 segundos: " + ahora);
+                System.out.println("Hora cada " + intervalo/1000 + " segundos: " + ahora);
     
                 if (sonido) {
                     Toolkit.getDefaultToolkit().beep();

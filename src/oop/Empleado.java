@@ -32,11 +32,11 @@ public class Empleado extends Persona implements Comparable, Trabajadores {
 		
 		Empleado otroEmpleado = (Empleado) miObjeto;
 		
-		if (this.idEmpleado < otroEmpleado.idEmpleado) {
+		if (this.sueldo < otroEmpleado.sueldo) {
 			return -1;
 		}
 		
-		if(this.idEmpleado > otroEmpleado.idEmpleado) {
+		if(this.sueldo > otroEmpleado.sueldo) {
 			return 1;
 		}
 		

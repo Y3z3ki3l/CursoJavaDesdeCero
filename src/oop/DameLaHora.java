@@ -11,7 +11,9 @@ public class DameLaHora implements ActionListener {
 
     public void actionPerformed(ActionEvent e){
 
-        Date ahora = new Date();
+        System.out.println("ActionEvent's ActionCommand: " + e.getSource().toString());
+
+        Date ahora = new Date();                                                                                                                                                                                                                                                                                                                
 
         System.out.println("La hora es: " + ahora);
 

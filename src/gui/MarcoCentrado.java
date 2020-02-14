@@ -13,16 +13,18 @@ public class MarcoCentrado extends JFrame {
 
     public MarcoCentrado(){
         
-        // Obteniendo el sistema de ventenas nativo
+        // Obteniendo el sistema de ventanas nativo, para obtener tamaño de pantalla
         Toolkit myScreen = Toolkit.getDefaultToolkit();    
         Dimension screenSize = myScreen.getScreenSize();
         int screenHeight = screenSize.height;
         int screenWidth = screenSize.width;
 
-        setBounds(screenWidth/4, screenHeight/4, screenWidth/2, screenHeight/2);
+        setLocation(screenWidth/4, screenHeight/4);
+        setSize(screenWidth/2, screenHeight/2);
+        // setBounds(screenWidth/4, screenHeight/4, screenWidth/2, screenHeight/2);
         setTitle("MarcoCentrado");
 
-        Image myIcon = myScreen.getImage("C:/Users/fmunozgu/Documents/CursoJavaDesdeCeroPI/PrimerosPasos/src/gui/git_icon_001.png");
+        Image myIcon = myScreen.getImage("C:/Users/Y3Z3K13L/Documents/JavaLearning/CursoJavaDesdeCero_PrimerosPasos/src/gui/git_icon_001.png" );
 
         setIconImage(myIcon);
 
