@@ -9,7 +9,7 @@ public class Uso_Empleado {
 		/*
 		Empleado empleado1 = new Empleado("Franz Ezequiel Muï¿½oz Gutierrez", 10000.00, 2019, 10, 9);
 		
-		System.out.println("Informaciï¿½n del empleado"
+		System.out.println("Información del empleado"
 				+ "\nNombre:				" + empleado1.getNombre()
 				+ "\nSueldo:				" + empleado1.getSueldo()
 				+ "\nFecha de ingreso:		" + empleado1.getAltaContrato());
@@ -17,7 +17,7 @@ public class Uso_Empleado {
 		System.out.println("Aumentar sueldo...");
 		empleado1.aumentaSueldo(15.0);
 		
-		System.out.println("Informaciï¿½n del empleado actualizada..."
+		System.out.println("Información del empleado actualizada..."
 				+ "\nNombre:				" + empleado1.getNombre()
 				+ "\nSueldo:				" + empleado1.getSueldo()
 				+ "\nFecha de ingreso:		" + empleado1.getAltaContrato());
@@ -31,10 +31,10 @@ public class Uso_Empleado {
 		misEmpleados[0] = new Empleado("Franz MuÃ±oz", 10000.00, 2019, 10, 9);
 		misEmpleados[1] = new Empleado("Coco Ramos", 11000.00, 2019, 03, 21);
 		misEmpleados[2] = new Empleado("Niko MuÃ±oz", 12000.00, 2017, 10, 27);
-		// misEmpleados[3] = new Empleado("Alonso Muï¿½oz");
-		misEmpleados[3] = jefe_RRHH;	//Polimorfismo en accion. Principio de sustituciï¿½n
+		// misEmpleados[3] = new Empleado("Alonso Muñoz");
+		misEmpleados[3] = jefe_RRHH;	//Polimorfismo en accion. Principio de sustitución
 		
-		misEmpleados[4] = new Jefatura("Ana MarÃ­a", 25000.00, 2014, 03, 01);
+		misEmpleados[4] = new Jefatura("Ana María", 25000.00, 2014, 03, 01);
 		Jefatura jefa_Finanzas = (Jefatura) misEmpleados[4];
 		jefa_Finanzas.estableceIncentivo(55000);
 
