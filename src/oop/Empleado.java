@@ -23,9 +23,9 @@ public class Empleado extends Persona implements Comparable, Trabajadores {
 	}
 	
 	public String getDescription() {
-		return "Este empleado tiene un Id: 		" + this.getIdEmpleado()
-				+ "\nSu sueldo es de:			" + String.format("%.2f", this.getSueldo())
-				+ "\nSu fecha de ingreso fue:		" + this.getAltaContrato();
+		return "Este empleado tiene un Id:      " + this.getIdEmpleado()
+				+ "\nSu sueldo es de:           " + String.format("%.2f", this.getSueldo())
+				+ "\nSu fecha de ingreso fue:   " + this.getAltaContrato();
 	}
 	
 	public int compareTo(Object miObjeto) {

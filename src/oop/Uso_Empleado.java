@@ -34,7 +34,7 @@ public class Uso_Empleado {
 		// misEmpleados[3] = new Empleado("Alonso Mu�oz");
 		misEmpleados[3] = jefe_RRHH;	//Polimorfismo en accion. Principio de sustituci�n
 		
-		misEmpleados[4] = new Jefatura("Ana María", 25000.00, 2014, 03, 01);
+		misEmpleados[4] = new Jefatura("Ana Mar�a", 25000.00, 2014, 03, 01);
 		Jefatura jefa_Finanzas = (Jefatura) misEmpleados[4];
 		jefa_Finanzas.estableceIncentivo(55000);
 
@@ -84,10 +84,10 @@ public class Uso_Empleado {
 		
 		for (Empleado e : misEmpleados) {
 			
-			System.out.println("\nId Empleado:			" + e.getIdEmpleado()
-					+ "\nNombre:				" + e.getNombre()
-					+ "\nSueldo:				" + String.format("%.2f", e.getSueldo())
-					+ "\nFecha de ingreso:		" + e.getAltaContrato());
+			System.out.println("\nId Empleado:  " + e.getIdEmpleado()
+					+ "\nNombre:                " + e.getNombre()
+					+ "\nSueldo:                " + String.format("%.2f", e.getSueldo())
+					+ "\nFecha de ingreso:      " + e.getAltaContrato());
 			
 		}
 		
